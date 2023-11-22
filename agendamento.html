@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<title>PFB No Parque</title>
+
+		<meta charset="utf-8">
+		<meta name="author" content="Alessandra e Tiago Segato">
+		<meta name="description" content="Pratica de atividade física ao ar livre utilizando a ProgressiveFitBall">
+		<meta name="keywords" content="PFB,Progressive FitBall,atividade física,parque,ar livre,pilates,FitBall">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	<body>
+		<header>
+			<img src="img/banner.png" alt="banner do site, contendo o nome pfb no parque uma logo do site, com uma paisagem do parque da cidade de fundo mostrando o céu azul e as árvores do parque" />
+		</header>
+
+		<nav>
+			<a class="a-menu" href="index.html#">HOME</a>
+			<a class="a-menu" href="index.html#pag-beneficios">BENEFÍCIOS</a>
+			<a class="a-menu" href="index.html#pag-modalidades">MODALIDADES</a>
+			<a class="a-menu" href="index.html#pag-treinos">TREINOS</a>
+			<a class="a-menu" href="#">AGENDAMENTOS</a>
+		</nav>
+
+			<section id="pag-agendamentos">
+				<h1>Agendamentos</h1>
+
+				<p>Agende uma aula experimental Grátis!</p>
+
+					<form name="agendar" method="GET" action="">
+						<label for="nome">Nome:</label>
+						<input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" required autofocus>
+						
+						<label for="email">E-mail:</label>
+						<input id="email" type="email" name="email" placeholder="nomeusuario@gmail.com">
+
+						<label for="senha">Senha:</label>
+						<input id="senha" type="password" name="senha" placeholder="Somente números">
+
+						<label for="celular">Número:</label>
+						<input id="celular" type="tel" name="celular" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"/>
+
+						<div id="data-hora-num">
+							<div>
+								<label for="data">Data:</label>
+								<input id="data" type="date" name="data" /> 
+							</div>
+							<div>
+								<label for="hora">Hora:</label>
+								<input id="hora" type="time" name="hora" /> 
+							</div>
+							<div>
+								<label for="aulas">Aulas:</label>
+								<input id="aulas" type="number" name="aulas" min="1" max="10" step="1"/>
+							</div>
+						</div>
+
+						<label for="nivel">Nível:</label>
+						<select id="nivel" name="nivel">
+							<option value="iniciante">Iniciante</option>
+							<option value="basico">Basico</option>
+							<option value="intermediario">Intermediário</option>
+							<option value="acancado">Avançado</option>
+						</select>
+
+						<fieldset>
+							<legend>Gênero</legend>
+							<input id="masculino" type="radio" name="genero" value="masculino" /> <label for="masculino">Masculino</label><br/>
+							<input id="feminino" type="radio" name="genero" value="masculino" /> <label for="feminino">Feminino</label>
+						</fieldset>
+
+						<fieldset>
+							<legend>Atividades</legend>
+							<input id="musculacao" type="checkbox" name="atividade" value="musculacao" /> <label for="musculacao">Musculação</label><br/>
+							<input id="pilates" type="checkbox" name="atividade" value="pilates" /> <label for="pilates">Pilates</label><br/>
+							<input id="yoga" type="checkbox" name="atividade" value="yoga" /> <label for="yoga">Yoga</label><br/>
+							<input id="corrida" type="checkbox" name="atividade" value="corrida" /> <label for="corrida">Corrida</label>
+						</fieldset>
+						<label for="msg">Mensagem:</label><br/>
+						<textarea id="msg" cols="52" rows="4" >
+						</textarea>
+
+
+						<div id="btn-forms">
+							<input value="AGENDAR" type="submit" name="btn-agendar" />
+							<input value="CANCELAR" type="reset" name="btn-cancelar" />
+						</div>
+					</form>
+
+			</section>
+
+		<footer>
+
+			<p>Desenvolvido por 
+				<a href="http://instagram.com/leozinholeo19" target="_blank">
+					Leonardo Machado
+				</a> - 2023
+			</p>
+
+		</footer>
+			
+	</body>
+</html>
